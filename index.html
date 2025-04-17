@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eyeclops - A Phishing Detection Browser Extension</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 2em;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3em;
+        }
+
+        h1 {
+            color: #1a73e8;
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background: #1a73e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .links a:hover {
+            background: #0c54c2;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 1.5em 0;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Denis Remus Marincas</h1>
+        <h2>Eyeclops - A Phishing Detection Browser Extension</h2>
+    </header>
+
+    <section>
+        <h3>Short Project Description</h3>
+        <p>
+            Eyeclops is a browser extension that uses state-of-the-art large language models to detect phishing attempts in real time. 
+            It analyzes various input types such as suspicious URLs, emails, or SMS messages, and gives users a confidence score along with a short reasoning explanation.
+        </p>
+
+        <h3>Abstract</h3>
+        <p>
+          This paper explores the fine-tuning, integration, and deployment of large language models (LLMs) together with the development process of a phishing detection browser extension. 
+          Multiple pre-trained large language models are fine-tuned and trained on the specific task of accurately detecting phishing attempts and their performance is compared using various metrics such as accuracy, precision and F1 score. 
+          The model that showcases the best performance is chosen to be integrated into the front-end of the browser extension, providing users with a practical tool for identifying potential phishing threats. 
+          In addition to the fine-tuned models, an unmodified text generation LLM is used to provide a reasoning behind the output of the classifier model. 
+          The use of a fine-tuned model on which time was spent tweaking various parameters in order to achieve best performance and the use of an untouched model emphasizes the ease of integrating general purpose LLMs into applications and aims to encourage adoption of LLMs by other developers in their applications. 
+          The extension features an intuitive interface that allows users to input text for analysis, enabling efficient detection of suspicious content.
+        </p>
+
+        <h3>🎥 Project Demo</h3>
+        <p>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch the Demo on YouTube</a>
+        </p>
+
+        <h3>📌 Poster</h3>
+        <img src="poster.png" alt="Project Poster">
+
+        <h3>🔗 Useful Links</h3>
+        <div class="links">
+            <a href="https://github.com/mrn-dns/phishing-detection-extension" target="_blank">GitHub Repository</a>
+            <a href="https://huggingface.co/buDujS/bert-large-uncased-merged" target="_blank">BERT Phishing Model</a>
+            <a href="https://huggingface.co/HuggingFaceH4/zephyr-7b-beta" target="_blank">Zephyr Reasoning Model</a>
+        </div>
+
+        <h3>🧠 Workflow Diagram</h3>
+        <img src="workflow.png" alt="Workflow Diagram">
+    </section>
+
+</body>
+</html>
